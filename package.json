@@ -1,0 +1,32 @@
+{
+  "name": "babel-stdin",
+  "version": "1.0.0",
+  "description": "A babel wrapper that applies the nearest .babelrc to code received via stdin",
+  "repository": "hawkrives/babel-stdin",
+  "author": "Hawken Rives <hawkrives@gmail.com>",
+  "license": "MIT",
+  "man": "./man/doc.1",
+  "bin": {
+    "babel-stdin": "babel-stdin.js"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "marked-man --version v$npm_package_version README.md > ./man/doc.1",
+    "preview": "npm run generate && man ./man/doc.1"
+  },
+  "keywords": [
+    "babel",
+    "stdin"
+  ],
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "find-up": "^1.1.2",
+    "get-stdin": "^5.0.1"
+  },
+  "devDependencies": {
+    "marked-man": "^0.1.5"
+  }
+}
