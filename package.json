@@ -23,7 +23,7 @@
     "stdin"
   ],
   "dependencies": {
-    "babel-core": "^6.18.0",
+    "babel-core": "^6.18.2",
     "find-up": "^2.0.0",
     "get-stdin": "^5.0.1"
   },
