@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "babel-core": "^6.18.2",
-    "find-up": "^2.0.0",
+    "find-up": "^2.1.0",
     "get-stdin": "^5.0.1"
   },
   "devDependencies": {
