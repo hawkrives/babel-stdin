@@ -28,6 +28,6 @@
     "get-stdin": "^5.0.1"
   },
   "devDependencies": {
-    "marked-man": "^0.1.6"
+    "marked-man": "^0.2.0"
   }
 }
