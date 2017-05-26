@@ -28,15 +28,14 @@ function args() {
 }
 
 function findConfig() {
-	const nearestBabelConfig = findUp.sync('.babelrc')
-	const nearestBabelJsConfig = findUp.sync('.babelrc.js')
+	const nearestBabelConfig = findUp.sync(['.babelrc', '.babelrc.js'])
 
-	if (!nearestBabelConfig && !nearestBabelJsConfig) {
+	if (!nearestBabelConfig) {
 		console.error('No .babelrc found.')
 		process.exit(1)
 	}
 
-	return nearestBabelConfig || nearestBabelJsConfig
+	return nearestBabelConfig
 }
 
 function main() {
