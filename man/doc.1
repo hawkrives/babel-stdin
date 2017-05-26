@@ -1,0 +1,22 @@
+.TH "BABEL\-STDIN" "1" "May 2017" "v1.0.0" ""
+.SH "NAME"
+\fBbabel-stdin\fR \- apply a \.babelrc to babel's stdin
+.SH SYNOPSIS
+.P
+.RS 2
+.nf
+<file> | babel\-stdin [\-\-compact] [\-\-highlight\-code]
+.fi
+.RE
+.SH DESCRIPTION
+.P
+A babel wrapper that applies the nearest \fB\|\.babelrc\fP to code received via stdin\.
+.SH OPTIONS
+.P
+.RS 2
+.nf
+\-\-[no\-]compact: pass {compact: true} to babel\. defaults to `true`
+\-\-[no\-]highlight\-code: pass {highlightCode: true} to babel\. defaults to `false`
+.fi
+.RE
+
