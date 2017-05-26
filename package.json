@@ -1,6 +1,6 @@
 {
   "name": "babel-stdin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A babel wrapper that applies the nearest .babelrc to code received via stdin",
   "repository": "hawkrives/babel-stdin",
   "author": "Hawken Rives <hawkrives@gmail.com>",
