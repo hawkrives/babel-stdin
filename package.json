@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm run generate",
+    "version": "npm run generate && git add man/",
     "generate": "marked-man --version v$npm_package_version README.md > ./man/doc.1",
     "preview": "npm run generate && man ./man/doc.1"
   },
