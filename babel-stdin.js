@@ -10,7 +10,7 @@ Options:
 `.trim()
 
 const getStdin = require('get-stdin')
-const babel = require('babel-core')
+const babel = require('@babel/core')
 const findUp = require('find-up')
 
 function args() {
@@ -35,11 +35,11 @@ function args() {
 }
 
 function findConfig() {
-	const nearestBabelConfig = findUp.sync(['.babelrc', '.babelrc.js'])
+	const nearestBabelConfig = findUp.sync(['babel.config.js', '.babelrc'])
 
 	if (!nearestBabelConfig) {
-		console.error('No .babelrc found.')
-		process.exit(1)
+		console.error('No .babelrc or babel.config.js found')
+		process.exit(2)
 	}
 
 	return nearestBabelConfig
